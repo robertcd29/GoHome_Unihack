@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script type="module" src="main.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="chestionar (1).css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    </style>
+</head>
+<body class="body">
+    
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <button id="submitAllButton" class="navbar-btn">Submit</button>
+        </ul>
+        
+    </nav>
+
+    <div class="mijloc">
+
+        <p class="text1">List your apartament!</p>
+
+        <p>
+            Be as specific as possible with your description, as the possible buyers/renters can be as informed as possible.
+        </p>
+
+        <P>
+            Complete the blank spaces below so that your property listing can be created.
+        </P>
+
+
+        <div class="square-container">
+            <div class="question-box">
+
+                <form class="formtext" id="namesurname">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+                
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required><br>
+                </form>
+            </div>
+        </div>
+
+
+
+        <div class="fundal">
+
+            <div class="textintrebare">
+                In the next section, fill the blank spaces with the requested information.
+            </div>
+    
+    
+    
+            <section class="two-column-section">
+                <div class="column column-1">
+                    
+                        <div class="align1">
+                            
+                            <form class="formtext" id="addressForm">
+                                <label for="address">Enter the property's address:</label>
+                                <input type="text" id="address" name="address" placeholder="address ex*">
+                            </form>
+                            
+                                <!-- Display for coordinates -->
+                                <p id="result"> </p>
+                            
+                                <!-- Map container -->
+                                <div id="map" style="height: auto; width: 200px; margin-top: 20px;"></div>
+                        </div>
+                           
+                        
+
+    
+                    
+
+                </div>
+                
+            </section>
+
+        </div>
+
+
+</div>
+
+<script src="adresa.js"></script>
+
+<div class="fundal2">
+            
+    <p class="completare1">
+        Choose the options for your listing:
+    <p>
+        <br>
+    
+    <form class="formtext" id="propertyForm">
+        <div class="numartext">
+            <label for="transactionType">The property is for: </label>
+                <select id="transactionType" name="transactionType" required>
+                    <option value="" disabled selected>Select one</option>
+                    <option value="rent">Rent</option>
+                    <option value="sale">Sale</option>
+                </select>
+        </div>
+
+        <br>
+
+        <div class="numartext">
+            <label for="rooms">Number of Rooms:</label>
+            <input type="number" id="rooms" name="rooms" placeholder="Enter rooms number" min="0">
+        </div>
+
+        <br>
+
+        <div class="numartext">
+            <label for="radius">Radius of the Apartment (in square meters):</label>
+            <input type="number" id="radius" name="radius" placeholder="Enter radius" min="1" required>
+        </div>
+
+        <br>
+
+        <div class="numartext">
+            <label for="rentPrice">Rent Price (per month):</label>
+            <input type="number" id="rentPrice" name="rentPrice" placeholder="Enter rent price" min="0">
+        </div>
+
+        <br>
+
+        <div class="numartext">
+            <label for="salePrice">Sale Price:</label>
+            <input type="number" id="salePrice" name="salePrice" placeholder="Enter sale price" min="0">
+        </div>
+        <br>
+    </form>
+
+</div>
+
+<div class="fundal3">
+
+    <p class="completare">
+        In the next section you are required to import photos of the property. Try to keep the quality up!
+    <p>
+
+    <div class="textintrebare1">
+        Import at least 4 photos:
+    </div>
+    <div class="fnd">
+        <div class="upload-container">
+            <h2>Upload Your Photos</h2>
+            <form id="photoUploadForm">
+                <label for="photoInput" class="upload-icon">
+                    <input type="file" id="photoInput" name="photos" accept="image/*" multiple>
+                    <span class="icon">&#x1F4F7;</span> <!-- Camera icon -->
+                </label>
+                <p>Click the icon to upload photos</p>
+            </form>
+        </div>
+    </div>
+
+</div>
+
+  </div>
+  <div class="wavy-section1">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 230">
+        <path fill="#D1B3FF" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,85.3C384,75,480,117,576,117.3C672,117,768,75,864,85.3C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  
+        </svg>
+        <div class="wave-text">
+          <p>&copy; <span id="year"></span>2025 GoHome. Beta v0.1. All rights reserved.</p>
+      </div>
+</div>
+
+
+    
+<script src="submit (1).js" defer></script>
+
+<script type="module" src="main (1).js"></script>
+<script src="formScript.js"></script>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script type="module" src="main.js"></script>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="chestionar.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+    </style>
+    <script src=""></script>
+</head>
+<body class="body">
+    
+    <nav class="navbar">
+        <ul class="navbar-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <button id="submitAllButton" class="navbar-btn">Submit</button>
+        </ul>
+        
+    </nav>
+
+    <div class="mijloc">
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <p class="text1">What is this about?</p>
+
+        <p>
+            Completing this form can ensure the best experience this website can offer!
+        </p>
+
+        <P>
+            Put down below the answers that best fit your lifestyle. You should be as accurate as the questions allow, as this form will be used to find the best home for you.
+        </P>
+
+
+        <div class="square-container">
+            <div class="question-box">
+
+                <form class="formtext" id="namesurname">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required><br>
+
+                    <label for="surname">Surname:</label>
+                    <input type="text" id="surname" name="surname" required><br>
+                    
+                </form>
+            </div>
+        </div>
+
+        <script src="namesurname.js" defer></script>
+
+
+        <div class="fundal">
+
+            <div class="textintrebare">
+                In the next section, fill the blank spaces with important adresses.
+            </div>
+    
+    
+    
+            <section class="two-column-section">
+                <div class="column column-1">
+                    
+                    <form class="formtext" id="adresa">
+                        <div class="align">
+                            
+                            <form  class="formtext" id="freq">
+                            <div class="form-container">
+                                <!-- First map container -->
+                                <div class="map-wrapper">
+                                    
+                                    <h2>Choose a place</h2>
+                                    <input type="text" id="location1" placeholder="Click on map to select location" required readonly>
+                                    <div id="map1" class="map"></div>
+
+                                    <label for="freq1">Frequency:</label>
+                                    <input type="text" id="freq1" required><br>
+                                </div>
+                        
+                                <!-- Second map container -->
+                                <div class="map-wrapper">
+                                    <h2>Choose a place</h2>
+                                    <input type="text" id="location2" placeholder="Click on map to select location" required readonly>
+                                    <div id="map2" class="map"></div>
+
+                                    <label class="freq2" for="freq2">Frequency:</label>
+                                    <input type="text" id="freq2" required><br>
+                                </div>
+                        
+                                <!-- Third map container -->
+                                <div class="map-wrapper">
+                                    <h2>Choose a place</h2>
+                                    <input type="text" id="location3" placeholder="Click on map to select location" required readonly>
+                                    <div id="map3" class="map"></div>
+
+                                    <label for="freq3">Frequency:</label>
+                                    <input type="text" id="freq3" required><br>
+                                </div>
+                            </div>
+                        
+
+                    </form>
+    
+                    
+
+                </div>
+                
+            </section>
+
+        </div>
+
+
+</div>
+
+<div class="fundal2">
+            
+    <div class="textintrebare">
+        Complete the blanks with required information.
+    </div>
+
+    <section class="two-column-section">
+        <div class="column column-1">
+            
+            <form  class="formtext" id="contact">
+                <label for="pnumber">Phone number:</label>
+                <input type="text" id="pnumber" name="pnumber" required><br>
+
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email" required><br>
+                
+            </form>
+
+
+        </div>
+        <div class="column column-2">
+            
+            <form  class="formtext" id="radRentBuy">
+                
+                <div class="align">
+                    <label for="minarea">Radius min/</label>
+                    <label for="maxarea">max:</label>
+                </div>
+                <div class="numartext">
+                            
+                    <input type="text" id="minarea" name="minarea" required>
+                    <input type="text" id="maxarea" name="maxarea" required><br>
+                </div>
+
+
+                <br>
+
+                <div class="align">
+                    <label for="rent">Rent/</label>
+                    <label for="buy">Buy</label>
+                </div>
+
+                
+
+                <div class="numartext">
+                            
+                    <input type="checkbox" id="rent" name="rent" required>
+                    <input type="checkbox" id="buy" name="buy" required><br>
+                </div>
+
+
+                
+                
+            </form>
+
+
+
+        </div>
+    </section>
+
+    
+
+
+</div>
+
+<div class="fundal3">
+
+    <p class="completare">
+        Complete one of the following optional questions depending on the option you picked earlier:
+    <p>
+
+    <div class="textintrebare1">
+        Complete a price ranging for a monthly rent:*
+    </div>
+
+    <form  class="formtext" id="rentprice">
+        <div class="numartext">
+            <label for="minpricerent"></label>
+            <label for="maxpricerent"></label>
+            <input type="text" id="minpricerent" name="minpricerent" required>
+            <input type="text" id="maxpricerent" name="maxpricerent" required><br>
+        </div>
+    </form>
+
+    <div class="textintrebare1">
+        Complete a price ranging for purchasing of property:*
+    </div>
+
+    <form  class="formtext" id="buyprice">
+        <div class="numartext">
+            <label for="minpricebuy"></label>
+            <label for="maxpricebuy"></label>
+            <input type="text" id="minpricebuy" name="minpricebuy" required>
+            <input type="text" id="maxpricebuy" name="maxpricebuy" required><br>
+        </div>
+    </form>
+
+</div>
+
+<div class="wavy-section1">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 230">
+        <path fill="#D1B3FF" fill-opacity="1" d="M0,224L48,192C96,160,192,96,288,85.3C384,75,480,117,576,117.3C672,117,768,75,864,85.3C960,96,1056,160,1152,160C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+  
+        </svg>
+        <div class="wave-text">
+          <p>&copy; <span id="year"></span>2025 GoHome. Beta v0.1. All rights reserved.</p>
+      </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    
+<script src="mapa.js" defer></script>
+<script src="submit.js" defer></script>
+
+<script type="module" src="main.js"></script>
+
+
+
+
+</body>
+</html>

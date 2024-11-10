@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Map Under Navbar</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        /* Navbar styles */
+        .navbar {
+            position: fixed;  /* Fixes the navbar to the top of the screen */
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+            color: white;
+            padding: 10px;
+            z-index: 1000; /* Ensure navbar is above other content */
+        }
+
+        /* Map container styles */
+        #map1 {
+            position: relative; /* To prevent the map from overlapping */
+            margin-top: 70px; /* Add enough space for the navbar height */
+            height: 500px; /* Set the map height */
+            width: 100%;
+            z-index: 1; /* Ensure map is below the navbar */
+        }
+
+        /* Optional: add some page content to visualize scrolling */
+        .content {
+            height: 2000px; /* Large content to enable scrolling */
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="navbar-brand">My Website</div>
+        <ul class="navbar-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Content section to show scrolling behavior -->
+    <div class="content">
+        <h2>Scroll Down to See the Map</h2>
+        <p>Some content to fill the page and allow scrolling...</p>
+    </div>
+
+    <!-- Map -->
+    <div id="map1" class="map leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0">
+        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
+            <div class="leaflet-pane leaflet-tile-pane">
+                <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
+                    <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 17; transform: translate3d(94px, 156px, 0px) scale(0.25);"></div>
+                    <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);">
+                        <img alt="" role="presentation" src="https://b.tile.openstreetmap.org/8/142/90.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-134px, -164px, 0px); opacity: 1;">
+                        <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/143/90.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(122px, -164px, 0px); opacity: 1;">
+                        <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/8/142/91.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-134px, 92px, 0px); opacity: 1;">
+                        <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/8/143/91.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(122px, 92px, 0px); opacity: 1;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

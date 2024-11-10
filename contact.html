@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #f5f5f5;
+    }
+    .contact-card {
+      max-width: 350px;
+      width: 100%;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .contact-card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    .contact-card h2 {
+      font-size: 1.5em;
+      color: #333;
+      margin-bottom: 5px;
+    }
+    .contact-card p {
+      color: #666;
+      font-size: 0.9em;
+      margin: 5px 0 20px;
+    }
+    .contact-card a {
+      color: #420863;
+      text-decoration: none;
+      display: inline-block;
+      margin: 5px;
+    }
+    .contact-card .social-icons a {
+      color: #420863;
+      font-size: 1.2em;
+      margin: 0 10px;
+    }
+    .contact-card button {
+      background-color: #420863;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 1em;
+    }
+    .contact-card button:hover {
+      background-color: #5a0b8a;
+    }
+
+    .back-button {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    text-decoration: none;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    margin-left: -1%;
+    color: #000; /* Customize color if needed */
+  }
+  .back-button i {
+    font-size: 1.2rem;
+    margin-right: 4px;
+  }
+
+  .buton_contact
+  {
+    margin-top: 2%;
+  }
+  </style>
+</head>
+<body>
+  
+
+<div class="contact-card">
+  <a href="index.html" class="back-button no-underline-black">
+    <i class="bi bi-arrow-left"></i>
+    Back to main page
+  </a>
+  <h2>John Doe</h2>
+  <p>Customer Support</p>
+  <p>Email: <a href="mailto:john.doe@example.com">COD.team@outlook.com</a></p>
+  <p>Phone: <a href="tel:+123456789">+40 723 889 001</a></p>
+  
+  <div class="social-icons">
+    <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
+    <a href="https://www.twitter.com" target="_blank">Twitter</a>
+  </div>
+  
+  <button onclick="window.location.href='mailto:john.doe@example.com'" class="buton_contact">Contact Now</button>
+</div>
+
+</body>
+</html>

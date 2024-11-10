@@ -1,0 +1,585 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #420863; /* Dark Purple */
+    color: #FFFFFF;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* Navbar links */
+
+
+/* Navbar brand (logo or website name) */
+.navbar-brand {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 1% 
+    /*margin-top: 3%*/
+}
+
+.navbar-brand a{
+    text-decoration: none;
+    color: black
+    
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    text-align: center;
+    margin-left: 34%;
+    margin-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+.navbar-links li {
+    text-align: center;
+    margin: 4%;
+    margin-left: 6%;
+    margin-right: 10%;
+    font-size: 20px;
+}
+
+.navbar-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.navbar-links a:hover {
+    color: #D1B3FF; /* Light Purple */
+}
+
+/* Navbar button */
+.navbar-btn {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #4A4A8D;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:650;
+    margin-left: 120%;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.navbar-btn:hover {
+    background-color: #D1B3FF;
+    color: #4A4A8D;
+}
+
+
+
+
+/*navbar*/
+
+.body{
+    background-color: #ddcdfa;
+    float: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+.mijloc{
+    margin-top: 2%;
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Centers items horizontally */
+    align-items: center;      /* Centers items vertically */
+    margin: 0;                /* Remove default body margin */
+    flex-direction: column;   /* Stack items vertically */
+    text-align: center;
+}
+
+#name, #transactionType, #rooms, #rentPrice, #radius, #salePrice {
+    width:250px;
+    height: 30px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+
+
+#address {
+    width:450px;
+    height: 30px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#surname {
+    width:250px;
+    height: 30px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#name1 {
+    width:100px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#numar1 {
+    width:30px;
+    height: 30px;
+    border-radius: 4px;
+    border-width: 1.2px;
+    font-size: 20px;
+}
+
+
+
+#freq1 {
+    margin-top: 40px;
+    width:30px;
+    height: 30px;
+    border-radius: 4px;
+    border-width: 1.2px;
+    font-size: 20px;
+}
+#freq2 {
+    margin-top: 40px;
+    width:30px;
+    height: 30px;
+    border-radius: 4px;
+    border-width: 1.2px;
+    font-size: 20px;
+}
+#freq3 {
+    margin-top: 40px;
+    width:30px;
+    height: 30px;
+    border-radius: 4px;
+    border-width: 1.2px;
+    font-size: 20px;
+}
+
+#minpricerent {
+    width:150px;
+    height: 40px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#maxpricerent {
+    width:150px;
+    height: 40px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#maxpricebuy {
+    width:150px;
+    height: 40px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#minpricebuy {
+    width:150px;
+    height: 40px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#pnumber {
+    width:250px;
+    height: 30px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+#email {
+    width:250px;
+    height: 30px;
+    font-size:20px;
+    border-radius: 4px;
+    border-width: 1.2px;
+}
+
+
+#numartext {
+
+    display: flex;
+
+}
+
+#numartext1 {
+
+    display: flex;
+    
+}
+
+#nr1 {
+
+    width:70px;
+    height: 50px;
+    font-size:25px;
+    border-width: 1.2px;
+    border-radius: 4px;
+}
+
+#nr2 {
+
+    width:100px;
+    height: 50px;
+    font-size:25px;
+    border-width: 1.2px;
+    border-radius: 4px;
+
+}
+
+#check {
+
+    width:30px;
+    height: 30px;
+    border-width: 1.2px;
+    border-radius: 4px;
+}
+
+.formtext{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    display: flex;
+    justify-content: center;  /* Centers items horizontally */
+    align-items: center;      /* Centers items vertically /              / Remove default body margin */
+    flex-direction: column;   /* Stack items vertically */
+    text-align: center;
+}
+
+.align{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+.align1{
+    display:flex;
+    flex-direction: column;
+    padding: 10px;
+    
+}
+
+.text1{
+    margin-left: 1%;
+    margin-top: 10%;
+    font-size:40px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+
+
+
+.square-container {
+    width: 500px;      /* Set the width of the square */
+    height: 300px;     /* Set the height of the square */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border: 2px solid #4a4a8d;
+    border-radius: 8px; /* Optional: to round the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: adds a shadow */
+    margin-top: 5%;
+}
+
+/* Content inside the square */
+.question-box {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+    max-width: 90%; /* Ensure content doesn't overflow */   
+}
+
+.textintrebare {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10px;
+}
+
+.textintrebare1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10px;
+    color:#FFFFFF
+}
+
+p {
+    font-size: 16px;
+    color: #555;
+}
+
+.btnin {
+    margin-top:15px
+}
+
+
+.two-column-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Center text within each column */
+    width: 100vw;                 /* Full viewport width */ 
+}
+
+/* Styling for each column */
+.column {
+    flex: 1;                      /* Each column takes up equal space */
+    padding: 20px;
+    box-sizing: border-box;       /* Ensures padding doesn’t affect width */
+    display: flex;
+    justify-content: center;      /* Center content horizontally */
+    box-sizing: border-box;       /* Center content vertically */
+}
+
+/* Optional: Set a max width for the container */
+.two-column-section {
+    max-width: 100%;
+    margin: 0%;
+}
+
+
+
+.fundal{
+
+    margin-top: 70px;
+    background-color: white;
+    height: 350px;
+}
+
+.fundal2{
+
+    margin-top:70px;
+    background-color: #ddcdfa;
+    height: 500px;
+}
+
+#sep {
+
+    text-align: center;
+    padding:20px;
+
+}
+
+.fundal3{
+
+    margin-top:70px;
+    background-color:#8b52f2;
+    height: 550px;
+    
+}
+
+.fnd {
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.completare{
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 10px;
+    color: #b8b6ba
+}
+
+.completare1 {
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-bottom: 3%;
+    margin-top: 10px;
+    color: #ffffff
+}
+
+.end {
+    background-color:#555;
+    height: 20px;
+    margin-top: 0px;
+}
+
+.fin {
+    text-align: center  ;
+    color:#ffffff ;
+    font-size: 13px;
+}
+
+
+.form-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+}
+.map-wrapper {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #939393;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.map {
+    height: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.bton {
+    padding: 10px 20px;
+    background-color: #FFFFFF;
+    color: #4A4A8D;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight:650;
+    font-family: 'Montserrat', sans-serif;
+    width:60px;
+}
+
+.bton:hover {
+    background-color: #D1B3FF;
+    color: #4A4A8D;
+}
+
+#minarea {
+
+    width:70px;
+    height: 50px;
+    font-size:25px;
+    border-width: 1.2px;
+    border-radius: 4px;
+}
+
+#maxarea {
+
+    width:70px;
+    height: 50px;
+    font-size:25px;
+    border-width: 1.2px;
+    border-radius: 4px;
+}
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Centering the upload container */
+body, html {
+    
+    background-color: #f4f4f4;
+}
+
+/* Main container styling */
+.upload-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+/* Title styling */
+.upload-container h2 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+/* Styling for the upload label and icon */
+.upload-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #4CAF50;
+    cursor: pointer;
+    border: 2px dashed #4CAF50;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 10px;
+}
+
+.upload-icon:hover {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Hide the file input */
+#photoInput {
+    display: none;
+}
+
+/* Instruction text */
+.upload-container p {
+    font-size: 14px;
+    color: #666;
+    margin-top: 10px;
+}
+    .wavy-section1 {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: -2%;
+        top: 310%;
+        background-color: #8b52f2;
+    }
+    
+    .wave-text {
+        position: absolute;
+        top: 80%; /* Adjust this to position text vertically */
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the text */
+        color: rgb(0, 0, 0); /* Make text readable on the wave */
+        z-index: 1; /* Ensure text is above the wave */
+        text-align: center; /* Center align the text */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+
+
+
